@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #EBE7E7;
+}
+
+#gallery{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#gallery img{ 
+  width: 25%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 8px;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+
+.header {
+  background:#E0DDDD;
+  text-align: center;
+  padding: 32px;
+}
+
+@media (max-width: 800px){
+  #gallery img{width: 50%;}
+}
+
+@media (max-width: 600px){
+  #gallery img{width: 100%;}
+}
